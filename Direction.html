@@ -1,22 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
-	<title>Réservation de billets</title>
-	<link rel="stylesheet" href="direction.css">
+	<title>Page produit</title>
+	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="footer.css">
-	
+	<link rel="stylesheet" href="header.css">
+
 </head>
+
 <body>
-	<header>
-		<h1>Réservation de billets</h1>
-		<nav>
-			<ul>
-				<li><a href="index.html">Voir l'offre</a></li>
-				<li><a href="#">Panier</a></li>
-			</ul>
-		</nav>
-	</header>
+	<div id="header-container"></div>
 	<main>
 		<section class="offre">
 			<h2 id="nom-chanteur"></h2>
@@ -28,7 +23,7 @@
 					<p id="lieu"></p>
 					<p id="date"></p>
 				</div>
-			</div>		
+			</div>
 			<h2>Nos offres de billets</h2>
 			<ul>
 				<li>
@@ -47,19 +42,11 @@
 					<button class="ajouter">Ajouter au panier</button>
 				</li>
 			</ul>
-			</section>
-			</main>
-<footer>
-	<div class="footer-container">
-		<div class="footer-links">
-			<a href="#">Conditions générales de vente</a>
-			<a href="#">Politique de confidentialité</a>
-			<a href="#">Mentions légales</a>
-			<a href="#">Contactez-nous</a>
-		</div>
-		<p>&copy; 2023 E-ticket. Tous droits réservés.</p>
-	</div>
-</footer>
-<script src="Script.js"></script>
+		</section>
+	</main>
+	<div id="footer-container"></div>
+
+	<script src="Script.js"></script>
 </body>
+
 </html>

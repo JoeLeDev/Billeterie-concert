@@ -9,6 +9,19 @@ function getParameterByName(name, url = window.location.href) {
     return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
 
+fetch('header.html')
+  .then(response => response.text())
+  .then(data => {
+    const headerContainer = document.querySelector('#header-container');
+    headerContainer.innerHTML = data;
+  });
+  fetch('footer.html')
+  .then(response => response.text())
+  .then(data => {
+    const headerContainer = document.querySelector('#footer-container');
+    headerContainer.innerHTML = data;
+  });
+
 
 function afficherChanteur(chanteurId) {
     const chanteur = chanteurs[chanteurId];
