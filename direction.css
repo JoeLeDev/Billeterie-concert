@@ -1,0 +1,106 @@
+main {
+	background-color: beige;
+}
+footer {
+	background-color: beige;
+}
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 1em;
+}
+
+h1 {
+	margin: 0;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav li {
+	margin-right: 1em;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.offre {
+	flex: 2;
+	padding: 1em;
+}
+
+.offre ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.offre li {
+	padding: 1em;
+	border: 1px solid #ccc;
+	margin-bottom: 1em;
+}
+
+.offre button {
+	background-color: #333;
+	color: #fff;
+	border: none;
+	padding: 0.5em;
+}
+
+.panier {
+	flex: 1;
+	background-color: #eee;
+	padding: 1em;
+}
+
+.panier ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.panier li {
+	margin-bottom: 0.5em;
+}
+
+.payer {
+	background-color: #333;
+	color: #fff;
+	border: none;
+	padding: 0.5em;
+}
+.chris {
+	display: flex;
+	flex-direction: row;
+	column-gap: 40px;
+	margin-right: 40px;
+}
+
+.h3des {
+	display: flex;
+	flex-direction: column;
+}
+
+img {
+	width: 500px;
+	height: 500px;
+	box-shadow: 0 2px 7px rgba(0, 0, 0, 30);
+}
