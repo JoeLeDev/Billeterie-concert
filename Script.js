@@ -40,7 +40,7 @@ const chanteurs = {
         Cette tournée est l'occasion pour les fans de voir Chris Brown en action, avec une performance scénique énergique et un répertoire de chansons qui ont captivé les fans pendant des années. 
         Les billets pour cette tournée sont très demandés, alors ne manquez pas cette occasion de vivre une soirée musicale inoubliable avec Chris Brown.
         `,
-        image: 'images/Chris_brown.png',
+        image: 'Images/Chris_brown.png',
         date:`24 juin 2023`,
         lieu:`Bercy`
         
@@ -52,7 +52,7 @@ const chanteurs = {
         En 2022, il entame sa tournée "Certified Lover Boy", qui promet d'être une expérience unique pour les fans de musique. 
         Cette tournée est l'occasion pour les fans de voir Drake en action, avec une performance scénique électrisante et un répertoire de chansons qui ont captivé les fans pendant des années.
         Les billets pour cette tournée sont très demandés, alors ne manquez pas cette occasion de vivre une soirée musicale inoubliable avec Drake.`,
-        image: `images/Drake.png`,
+        image: `Images/Drake.png`,
         date:`30 janvier 2023`,
         lieu:`Bercy`
     },
@@ -63,7 +63,7 @@ const chanteurs = {
         En 2022, il se lance dans sa tournée "After Hours", qui promet d'être une expérience unique en son genre pour les fans de musique en live. 
         Cette tournée est l'occasion de voir The Weeknd sur scène, avec une performance époustouflante et un répertoire de chansons qui ont marqué toute une génération. 
         Les billets pour cette tournée sont très prisés, alors ne manquez pas cette occasion de vivre une soirée musicale inoubliable avec The Weeknd.`,
-        image: 'images/The weeknd.png',
+        image: 'Images/The weeknd.png',
         date:`30 novembre 2022`,
         lieu:`Bercy`
     },
@@ -74,7 +74,7 @@ const chanteurs = {
         En 2022, elle se lance dans sa tournée "The Queen Bey Experience", une occasion unique pour les fans de la voir sur scène et de découvrir son répertoire légendaire en live. 
         Cette tournée promet d'être un spectacle inoubliable, avec des performances époustouflantes et une production scénique à couper le souffle. Les billets pour cette tournée sont très demandés,
         alors ne manquez pas l'opportunité de vivre une soirée magique en compagnie de la reine de la pop.`,
-        image: 'images/Beyonce.png',
+        image: 'Images/Beyonce.png',
         date:`10 mars 2023`,
         lieu:`Stade de france`
     },
@@ -86,7 +86,7 @@ const chanteurs = {
         Les concerts de Rihanna sont connus pour leur énergie et leur spectacle spectaculaire, avec des chorégraphies impressionnantes et des effets spéciaux époustouflants. 
         Les fans peuvent s'attendre à une expérience musicale inoubliable, avec des chansons qui ont dominé les charts du monde entier et ont inspiré des générations de fans. 
         Ne manquez pas cette occasion de voir Rihanna sur scène et de vivre une soirée musicale qui restera gravée dans les mémoires.`,
-        image: 'images/Rihanna.png',
+        image: 'Images/Rihanna.png',
         date:`12 decembre 2022`,
         lieu:`Bercy`
     },
@@ -98,7 +98,7 @@ const chanteurs = {
         En 2022, elle est de retour avec sa nouvelle tournée "Positions Tour", qui promet d'être tout aussi incroyable que les précédentes. 
         Les fans peuvent s'attendre à une soirée remplie de ses chansons les plus populaires, ainsi que de nouvelles surprises et expériences inoubliables. 
         Les billets pour cette tournée sont très demandés, alors assurez-vous de ne pas manquer cette occasion de voir Ariana Grande en direct sur scène.`,
-        image: 'images/Ariana_grande.png',
+        image: 'Images/Ariana_grande.png',
         date:`23 octobre 2022`,
         lieu:`Parc des princes`
     },
@@ -109,7 +109,7 @@ const chanteurs = {
         Leur single "DDU-DU DDU-DU" a été le premier clip vidéo de K-pop à atteindre un milliard de vues sur YouTube. 
         Le groupe a également fait des tournées à guichets fermés dans le monde entier, notamment en Amérique du Nord, en Europe et en Asie. 
         Si vous êtes fan de musique pop entraînante et de performances incroyables, ne manquez pas la chance de voir Blackpink sur scène lors de leur prochaine tournée.`,
-        image: 'images/Black_pink.png',
+        image: 'Images/Black_pink.png',
         date:`14 novembre 2022`,
         lieu:`Bercy`
     }, 
@@ -119,7 +119,7 @@ const chanteurs = {
         Le groupe est composé de sept membres talentueux: Jin, Suga, J-Hope, RM, Jimin, V et Jungkook. BTS a sorti de nombreux hits, notamment "Dynamite", "Boy With Luv" et "Blood Sweat & Tears", et a remporté de nombreux prix pour leur musique et leurs performances scéniques.
         Leur tournée mondiale "Map of the Soul" est un événement incontournable pour les fans de K-pop et offre une expérience unique en son genre avec des chorégraphies captivantes, des effets spéciaux époustouflants et des performances vocales incroyables.
         Si vous êtes fan de BTS, ne manquez pas l'occasion de voir le groupe en live lors de leur prochaine tournée.`,
-        image: 'images/Bts.png',
+        image: 'Images/Bts.png',
         date:`24 juin 2022`,
         lieu:`Bercy`
     },
@@ -130,7 +130,7 @@ const chanteurs = {
         Depuis leurs débuts, ils ont captivé les fans du monde entier avec leurs performances incroyables et leurs chansons entraînantes, notamment "Black Mamba" et "Next Level". 
         Leur style unique mélange musique électronique et R&B, créant une expérience sonore captivante. Les fans peuvent s'attendre à des performances scéniques dynamiques et des chorégraphies impeccables lors des concerts d'Aespa. 
         Ne manquez pas l'occasion de voir l'un des groupes de K-pop les plus populaires du moment en concert.`,
-        image: 'images/Aespa.png',
+        image: 'Images/Aespa.png',
         date:`17 juillet 2023`,
         lieu:`Bercy`
     },
@@ -142,7 +142,7 @@ const chanteurs = {
         En 2022, il est en tournée dans toute la France pour présenter son dernier album, "Destin", qui a été très bien accueilli par le public et la critique. 
         Cette tournée est l'occasion pour les fans de voir Ninho en live et de vibrer sur ses morceaux emblématiques. 
         Ne manquez pas cette occasion de découvrir l'univers de Ninho en concert !`,
-        image: 'images/Ninho.png',
+        image: 'Images/Ninho.png',
         date:`15 septembre 2023`,
         lieu:`Bercy`
     },
@@ -155,7 +155,7 @@ const chanteurs = {
         En 2022, Booba est en tournée pour promouvoir son dernier album "ULTRA", qui a été très bien accueilli par ses fans. 
         Cette tournée est l'occasion pour les fans de découvrir en live les titres de cet album ainsi que les classiques de Booba qui ont marqué le rap français. 
         Les billets pour cette tournée sont très demandés, alors ne manquez pas cette occasion de voir Booba sur scène.`,
-        image: 'images/Booba.png',
+        image: 'Images/Booba.png',
         date:`6 novembre 2023`,
         lieu:`Bercy`
     },
@@ -166,7 +166,7 @@ const chanteurs = {
         En 2022, il se prépare à partir en tournée pour présenter son dernier album "JVLIVS II" au public. 
         Cette tournée promet d'être une expérience unique pour les fans de rap, avec des moments de pure énergie et des moments plus intimes où Sch dévoile son univers sombre et complexe. 
         Les billets pour cette tournée sont très demandés, alors ne manquez pas cette occasion de voir Sch en concert.`,
-        image: 'images/Sch.png',
+        image: 'Images/Sch.png',
         date:`1 decembre 2023`,
         lieu:`Vélodome`
     },
@@ -177,7 +177,7 @@ const chanteurs = {
         Depuis, elle enchaîne les projets et collabore avec d'autres artistes de renom, tels que Ninho ou encore Dadju. 
         Avec son style unique, mélange de R&B, de pop et de musique africaine, Ronisia est en train de se faire un nom dans l'industrie musicale française. 
         Sa voix puissante et son énergie sur scène ne laissent personne indifférent et promettent de belles surprises pour les fans dans les années à venir.`,
-        image: 'images/Ronisia.png',
+        image: 'Images/Ronisia.png',
         date:`3 avril 2023`,
         lieu:`La cigale`
     },
@@ -188,7 +188,7 @@ const chanteurs = {
         En plus de son talent pour la musique, Aya est également une icône de la mode, inspirant de nombreuses personnes avec son style distinctif et sa confiance en elle-même. 
         Elle a remporté plusieurs récompenses pour sa musique, y compris un NRJ Music Award pour la "Chanson française de l'année" en 2018. 
         Aya continue d'être une force majeure dans l'industrie de la musique française et internationale, avec une base de fans dévoués qui attendent avec impatience chaque nouvelle sortie.`,
-        image: 'images/Aya.png',
+        image: 'Images/Aya.png',
         date:`20 septembre 2023`,
         lieu:`Bercy`
     },
@@ -199,7 +199,7 @@ const chanteurs = {
         Depuis lors, elle a sorti de nombreux hits, notamment "On Fleek", "Alibi" et "Kitoko". 
         Elle est également connue pour ses performances scéniques énergiques et captivantes. En 2022, Eva Queen a annoncé sa tournée "Queendom", qui promet d'être une expérience musicale exceptionnelle pour ses fans. 
         Les billets pour sa tournée se vendent rapidement, alors ne manquez pas l'opportunité de voir Eva Queen en direct et de profiter de sa musique entraînante et de sa présence sur scène incomparable.`,
-        image: 'images/Eva.png',
+        image: 'Images/Eva.png',
         date:`15 mai 2023`,
         lieu:`Bercy`
     },
