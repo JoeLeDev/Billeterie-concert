@@ -54,8 +54,8 @@ const chanteurs = {
         Les billets pour cette tournée sont très demandés, alors ne manquez pas cette occasion de vivre une soirée musicale inoubliable avec Chris Brown.
         `,
         image: 'Images/Chris_brown.png',
-        date:`24 juin 2023`,
-        lieu:`Bercy`
+        date:`date : 24 juin 2023`,
+        lieu:`lieu : Bercy`
         
     },
     2: {
@@ -66,8 +66,8 @@ const chanteurs = {
         Cette tournée est l'occasion pour les fans de voir Drake en action, avec une performance scénique électrisante et un répertoire de chansons qui ont captivé les fans pendant des années.
         Les billets pour cette tournée sont très demandés, alors ne manquez pas cette occasion de vivre une soirée musicale inoubliable avec Drake.`,
         image: `Images/Drake.png`,
-        date:`30 janvier 2023`,
-        lieu:`Bercy`
+        date:`date : 30 janvier 2023`,
+        lieu:`lieu : Bercy`
     },
     3: {
         nom: 'The weeknd',
@@ -77,8 +77,8 @@ const chanteurs = {
         Cette tournée est l'occasion de voir The Weeknd sur scène, avec une performance époustouflante et un répertoire de chansons qui ont marqué toute une génération. 
         Les billets pour cette tournée sont très prisés, alors ne manquez pas cette occasion de vivre une soirée musicale inoubliable avec The Weeknd.`,
         image: 'Images/The weeknd.png',
-        date:`30 novembre 2022`,
-        lieu:`Bercy`
+        date:`date : 30 novembre 2022`,
+        lieu:`lieu : Bercy`
     },
     4: {
         nom: 'Beyonce',
@@ -88,8 +88,8 @@ const chanteurs = {
         Cette tournée promet d'être un spectacle inoubliable, avec des performances époustouflantes et une production scénique à couper le souffle. Les billets pour cette tournée sont très demandés,
         alors ne manquez pas l'opportunité de vivre une soirée magique en compagnie de la reine de la pop.`,
         image: 'Images/Beyonce.png',
-        date:`10 mars 2023`,
-        lieu:`Stade de france`
+        date:`date : 10 mars 2023`,
+        lieu:`lieu : Stade de france`
     },
     5: {
         nom: 'Rihanna',
@@ -100,8 +100,8 @@ const chanteurs = {
         Les fans peuvent s'attendre à une expérience musicale inoubliable, avec des chansons qui ont dominé les charts du monde entier et ont inspiré des générations de fans. 
         Ne manquez pas cette occasion de voir Rihanna sur scène et de vivre une soirée musicale qui restera gravée dans les mémoires.`,
         image: 'Images/Rihanna.png',
-        date:`12 decembre 2022`,
-        lieu:`Bercy`
+        date:`date : 12 decembre 2022`,
+        lieu:`lieu : Bercy`
     },
     6: {
         nom: 'Ariana Grande',
@@ -112,8 +112,8 @@ const chanteurs = {
         Les fans peuvent s'attendre à une soirée remplie de ses chansons les plus populaires, ainsi que de nouvelles surprises et expériences inoubliables. 
         Les billets pour cette tournée sont très demandés, alors assurez-vous de ne pas manquer cette occasion de voir Ariana Grande en direct sur scène.`,
         image: 'Images/Ariana_grande.png',
-        date:`23 octobre 2022`,
-        lieu:`Parc des princes`
+        date:`date : 23 octobre 2022`,
+        lieu:`lieu : Parc des princes`
     },
     7: {
         nom: 'Black pink',
@@ -123,8 +123,8 @@ const chanteurs = {
         Le groupe a également fait des tournées à guichets fermés dans le monde entier, notamment en Amérique du Nord, en Europe et en Asie. 
         Si vous êtes fan de musique pop entraînante et de performances incroyables, ne manquez pas la chance de voir Blackpink sur scène lors de leur prochaine tournée.`,
         image: 'Images/Black_pink.png',
-        date:`14 novembre 2022`,
-        lieu:`Bercy`
+        date:`date : 14 novembre 2022`,
+        lieu:`lieu : Bercy`
     }, 
     8: {
         nom: 'BTS',
@@ -133,8 +133,8 @@ const chanteurs = {
         Leur tournée mondiale "Map of the Soul" est un événement incontournable pour les fans de K-pop et offre une expérience unique en son genre avec des chorégraphies captivantes, des effets spéciaux époustouflants et des performances vocales incroyables.
         Si vous êtes fan de BTS, ne manquez pas l'occasion de voir le groupe en live lors de leur prochaine tournée.`,
         image: 'Images/Bts.png',
-        date:`24 juin 2022`,
-        lieu:`Bercy`
+        date:`date : 24 juin 2022`,
+        lieu:`lieu : Bercy`
     },
     9: {
         nom: 'Aespa',
@@ -144,8 +144,8 @@ const chanteurs = {
         Leur style unique mélange musique électronique et R&B, créant une expérience sonore captivante. Les fans peuvent s'attendre à des performances scéniques dynamiques et des chorégraphies impeccables lors des concerts d'Aespa. 
         Ne manquez pas l'occasion de voir l'un des groupes de K-pop les plus populaires du moment en concert.`,
         image: 'Images/Aespa.png',
-        date:`17 juillet 2023`,
-        lieu:`Bercy`
+        date:`date : 17 juillet 2023`,
+        lieu:`lieu : Bercy`
     },
     10: {
         nom: 'Ninho',
@@ -156,8 +156,8 @@ const chanteurs = {
         Cette tournée est l'occasion pour les fans de voir Ninho en live et de vibrer sur ses morceaux emblématiques. 
         Ne manquez pas cette occasion de découvrir l'univers de Ninho en concert !`,
         image: 'Images/Ninho.png',
-        date:`15 septembre 2023`,
-        lieu:`Bercy`
+        date:`date : 15 septembre 2023`,
+        lieu:`lieu : Bercy`
     },
     11: {
         nom: 'Booba',
@@ -169,8 +169,8 @@ const chanteurs = {
         Cette tournée est l'occasion pour les fans de découvrir en live les titres de cet album ainsi que les classiques de Booba qui ont marqué le rap français. 
         Les billets pour cette tournée sont très demandés, alors ne manquez pas cette occasion de voir Booba sur scène.`,
         image: 'Images/Booba.png',
-        date:`6 novembre 2023`,
-        lieu:`Bercy`
+        date:`date : 6 novembre 2023`,
+        lieu:`lieu : Bercy`
     },
     12: {
         nom: 'SCH',
@@ -180,8 +180,8 @@ const chanteurs = {
         Cette tournée promet d'être une expérience unique pour les fans de rap, avec des moments de pure énergie et des moments plus intimes où Sch dévoile son univers sombre et complexe. 
         Les billets pour cette tournée sont très demandés, alors ne manquez pas cette occasion de voir Sch en concert.`,
         image: 'Images/Sch.png',
-        date:`1 decembre 2023`,
-        lieu:`Vélodome`
+        date:`date : 1 decembre 2023`,
+        lieu:`lieu : Vélodome`
     },
     13: {
         nom: 'Ronisia',
@@ -191,7 +191,7 @@ const chanteurs = {
         Avec son style unique, mélange de R&B, de pop et de musique africaine, Ronisia est en train de se faire un nom dans l'industrie musicale française. 
         Sa voix puissante et son énergie sur scène ne laissent personne indifférent et promettent de belles surprises pour les fans dans les années à venir.`,
         image: 'Images/Ronisia.png',
-        date:`3 avril 2023`,
+        date:`date : 3 avril 2023`,
         lieu:`La cigale`
     },
     14: {
@@ -202,8 +202,8 @@ const chanteurs = {
         Elle a remporté plusieurs récompenses pour sa musique, y compris un NRJ Music Award pour la "Chanson française de l'année" en 2018. 
         Aya continue d'être une force majeure dans l'industrie de la musique française et internationale, avec une base de fans dévoués qui attendent avec impatience chaque nouvelle sortie.`,
         image: 'Images/Aya.png',
-        date:`20 septembre 2023`,
-        lieu:`Bercy`
+        date:`date : 20 septembre 2023`,
+        lieu:`lieu : Bercy`
     },
     15: {
         nom: 'Eva Queen',
@@ -213,7 +213,7 @@ const chanteurs = {
         Elle est également connue pour ses performances scéniques énergiques et captivantes. En 2022, Eva Queen a annoncé sa tournée "Queendom", qui promet d'être une expérience musicale exceptionnelle pour ses fans. 
         Les billets pour sa tournée se vendent rapidement, alors ne manquez pas l'opportunité de voir Eva Queen en direct et de profiter de sa musique entraînante et de sa présence sur scène incomparable.`,
         image: 'Images/Eva.png',
-        date:`15 mai 2023`,
-        lieu:`Bercy`
+        date:`date : 15 mai 2023`,
+        lieu:`lieu : Bercy`
     },
 };
