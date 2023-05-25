@@ -43,6 +43,49 @@ document.addEventListener("DOMContentLoaded", function () {
     afficherChanteur(chanteurId);
 });
   
+window.onload = function() {
+    // Masque les champs de carte de crédit au chargement initial
+    let cardFields = document.getElementsByClassName("card_txt");
+    for (let i = 0; i < cardFields.length; i++) {
+      cardFields[i].style.display = "none";
+    }
+  };
+  
+  function updatePaymentFields() {
+    let selectedPayment = document.getElementById("type-paiement").value;
+  
+    let cardFields = document.getElementsByClassName("card_txt");
+    let paypalFields = document.getElementsByClassName("paypal-txt");
+    let virementBancaireFields = document.getElementsByClassName("banque_txt");
+  
+    // Masque tous les champs
+    for (let i = 0; i < cardFields.length; i++) {
+      cardFields[i].style.display = "none";
+    }
+    for (let i = 0; i < paypalFields.length; i++) {
+      paypalFields[i].style.display = "none";
+    }
+    for (let i = 0; i < virementBancaireFields.length; i++) {
+      virementBancaireFields[i].style.display = "none";
+    }
+  
+    // Affiche les champs correspondant au mode de paiement sélectionné
+    if (selectedPayment === "carte-credit") {
+      for (let i = 0; i < cardFields.length; i++) {
+        cardFields[i].style.display = "block";
+      }
+    } else if (selectedPayment === "paypal") {
+      for (let i = 0; i < paypalFields.length; i++) {
+        paypalFields[i].style.display = "block";
+      }
+    } else if (selectedPayment === "virement-bancaire") {
+      for (let i = 0; i < virementBancaireFields.length; i++) {
+        virementBancaireFields[i].style.display = "block";
+      }
+    }
+  }
+  
+
 const chanteurs = {
     
     1: {
