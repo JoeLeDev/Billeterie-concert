@@ -42,49 +42,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const chanteurId = getParameterByName("id");
     afficherChanteur(chanteurId);
 });
-  
-window.onload = function() {
-    // Masque les champs de carte de crédit au chargement initial
-    let cardFields = document.getElementsByClassName("card_txt");
-    for (let i = 0; i < cardFields.length; i++) {
-      cardFields[i].style.display = "none";
-    }
-  };
-  
-  function updatePaymentFields() {
-    let selectedPayment = document.getElementById("type-paiement").value;
-  
-    let cardFields = document.getElementsByClassName("card_txt");
-    let paypalFields = document.getElementsByClassName("paypal-txt");
-    let virementBancaireFields = document.getElementsByClassName("banque_txt");
-  
-    // Masque tous les champs
-    for (let i = 0; i < cardFields.length; i++) {
-      cardFields[i].style.display = "none";
-    }
-    for (let i = 0; i < paypalFields.length; i++) {
-      paypalFields[i].style.display = "none";
-    }
-    for (let i = 0; i < virementBancaireFields.length; i++) {
-      virementBancaireFields[i].style.display = "none";
-    }
-  
-    // Affiche les champs correspondant au mode de paiement sélectionné
-    if (selectedPayment === "carte-credit") {
-      for (let i = 0; i < cardFields.length; i++) {
-        cardFields[i].style.display = "block";
-      }
-    } else if (selectedPayment === "paypal") {
-      for (let i = 0; i < paypalFields.length; i++) {
-        paypalFields[i].style.display = "block";
-      }
-    } else if (selectedPayment === "virement-bancaire") {
-      for (let i = 0; i < virementBancaireFields.length; i++) {
-        virementBancaireFields[i].style.display = "block";
-      }
-    }
-  }
-  
+
+
 
 const chanteurs = {
     
@@ -260,3 +219,108 @@ const chanteurs = {
         lieu:`lieu : Bercy`
     },
 };
+
+
+window.onload = function() {
+    // Affiche les champs de carte de crédit au chargement initial
+    let cardFields = document.getElementsByClassName("card_txt");
+    for (let i = 0; i < cardFields.length; i++) {
+        cardFields[i].style.display = "block";
+    }
+    // Masque les champs de carte de crédit au chargement initial
+  let paypalFields = document.getElementsByClassName("paypal-txt");
+  let virementBancaireFields = document.getElementsByClassName("banque_txt");
+  for (let i = 0; i < virementBancaireFields.length; i++) {
+    virementBancaireFields[i].style.display = "none";
+  }
+  for (let i = 0; i < paypalFields.length; i++) 
+  paypalFields[i].style.display = "none";
+ 
+  let sections = document.querySelectorAll(".infos_container, .notif_container, .paiement_container, .booking_container");
+  for (let i = 1; i < sections.length; i++) {
+    sections[i].style.display = "none";
+  }
+
+    afficherReservations();
+};
+function updatePaymentFields() {
+  let selectedPayment = document.getElementById("type-paiement").value;
+
+  let cardFields = document.getElementsByClassName("card_txt");
+  let paypalFields = document.getElementsByClassName("paypal-txt");
+  let virementBancaireFields = document.getElementsByClassName("banque_txt");
+
+  // Masque tous les champs
+  for (let i = 0; i < cardFields.length; i++) {
+    cardFields[i].style.display = "none";
+  }
+  for (let i = 0; i < paypalFields.length; i++) {
+    paypalFields[i].style.display = "none";
+  }
+  for (let i = 0; i < virementBancaireFields.length; i++) {
+    virementBancaireFields[i].style.display = "none";
+  }
+
+  // Affiche les champs correspondant au mode de paiement sélectionné
+  if (selectedPayment === "carte-credit") {
+    for (let i = 0; i < cardFields.length; i++) {
+      cardFields[i].style.display = "block";
+    }
+  } else if (selectedPayment === "paypal") {
+    for (let i = 0; i < paypalFields.length; i++) {
+      paypalFields[i].style.display = "block";
+    }
+  } else if (selectedPayment === "virement-bancaire") {
+    for (let i = 0; i < virementBancaireFields.length; i++) {
+      virementBancaireFields[i].style.display = "block";
+    }
+  }
+}
+  
+  // Fonction pour gérer le changement de section en fonction du lien sélectionné
+  function changeSection(event) {
+    event.preventDefault(); // Empêche le comportement par défaut du lien
+    
+    // Récupère la classe de la section correspondante au lien sélectionné
+    let target = event.target.getAttribute("href").substr(1);
+    
+    // Masque toutes les sections
+    let sections = document.querySelectorAll(".infos_container, .notif_container, .paiement_container, .booking_container");
+    sections.forEach(section => {
+      section.style.display = "none";
+    });
+    
+    // Affiche la section correspondante au lien sélectionné
+    let selectedSections = document.getElementsByClassName(target);
+    for (let i = 0; i < selectedSections.length; i++) {
+      selectedSections[i].style.display = "block";
+    }
+  }
+  
+  // Ajoute un écouteur d'événement sur tous les liens de la sidebar
+  let sidebarLinks = document.querySelectorAll(".sidebar a");
+  sidebarLinks.forEach(link => {
+    link.addEventListener("click", changeSection);
+  });
+  
+
+   let reservations = [
+    { id: 1, date: "2023-24-06", client: "John Doe" },
+    { id: 2, date: "2023-05-05", client: "Jane Doe" },
+    { id: 3, date: "2023-30-10", client: "Jonathan Dupont" },
+  ];
+
+  // Fonction pour afficher les réservations dans la liste
+  function afficherReservations() {
+    let reservationList = document.getElementById("reservation-list");
+
+    // Vide la liste existante
+    reservationList.innerHTML = "";
+
+    // Parcourt les réservations et ajoute chaque réservation à la liste
+    reservations.forEach(function(reservation) {
+      let listItem = document.createElement("li");
+      listItem.textContent = "Réservation #" + reservation.id + " - Date: " + reservation.date + " - Client: " + reservation.client;
+      reservationList.appendChild(listItem);
+    });
+  }
