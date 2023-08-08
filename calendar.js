@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 alert("Vous ne pouvez pas réserver une date antérieure à la date actuelle.");
             }
         },
+        
 
         eventClick: function(info) {
             if (confirm("Êtes-vous sûr de vouloir annuler votre réservation pour cette date ?")) {
