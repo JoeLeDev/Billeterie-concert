@@ -1,50 +1,67 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var calendarEl = document.getElementById('calendar');
+    let calendarEl = document.getElementById('calendar');
+    let artistSelect = document.getElementById('artistSelect');
+    let ticketSelect = document.getElementById('ticketSelect');
 
-    // Tableau d'événements
-    let eventsData = [
-        {
-            title: 'Chris brown',
-            start: '2023-08-10',
-            end: '2023-08-10'
-        },
-        {
-            title: 'Drake',
-            start: '2023-08-15',
-            end: '2023-08-15'
-        },
-        // Ajoutez plus d'événements ici...
-    ];
+
+    let reservedDates = [];
 
     let calendar = new FullCalendar.Calendar(calendarEl, {
         initialView: 'dayGridMonth',
-        events: eventsData, // Utilisez le tableau d'événements ici
-        eventDidMount: function(info) {
-            var eventElement = info.el;
-            var eventData = info.event.extendedProps;
-            
-            if (eventData.reserved) {
-                // Cet événement est réservé, ne faites rien au survol
-                return;
+        events: reservedDates.map(date => ({
+            title: date.artist,
+            start: date.date,
+            backgroundColor: 'red',
+            borderColor: 'red'
+        })),
+        selectable: true,
+        select: function(info) {
+            let currentDate = new Date();
+            if (info.start > currentDate) {
+                artistSelect.style.display = 'block';
+                artistSelect.dataset.selectedDate = info.startStr; // Stocker la date sélectionnée dans l'attribut data-selected-date
+                calendar.unselect();
+            } else {
+                alert("Vous ne pouvez pas réserver une date antérieure à la date actuelle.");
             }
-            
-            eventElement.addEventListener('mouseover', function() {
-                // Ajoutez ici le code pour l'effet de survol sur les dates non réservées
-                eventElement.style.backgroundColor = 'lightgray';
-            });
-            
-            eventElement.addEventListener('mouseout', function() {
-                // Ajoutez ici le code pour réinitialiser l'apparence lorsque la souris quitte la date
-                eventElement.style.backgroundColor = '';
-            });
-            
-            eventElement.addEventListener('click', function() {
-                // Ajoutez ici le code pour l'action lors du clic sur une date non réservée
-                // Par exemple, changer la couleur de fond lorsque l'événement est cliqué
-                eventElement.style.backgroundColor = 'blue';
-            });
-        }
-    });
+        },
 
+        eventClick: function(info) {
+            if (confirm("Êtes-vous sûr de vouloir annuler votre réservation pour cette date ?")) {
+                let selectedDate = info.event.startStr;
+                let index = reservedDates.findIndex(date => date.date === selectedDate);
+                if (index !== -1) {
+                    reservedDates.splice(index, 1);
+                    info.event.remove();
+                }
+            }
+        },
+    });
+    artistSelect.addEventListener('change', function() {
+        selectedArtist = artistSelect.value; // Stocker l'artiste sélectionné
+        ticketSelect.style.display = 'block'; // Afficher la liste de billets
+        artistSelect.style.display = 'none';
+    });
+    
+    ticketSelect.addEventListener('change', function() {
+        let selectedTicket = ticketSelect.value;
+        let selectedDate = artistSelect.dataset.selectedDate;
+        
+        if (selectedArtist && selectedTicket) {
+            if (confirm("Êtes-vous sûr de vouloir réserver cette date pour " + selectedArtist + " avec un billet " + selectedTicket + " ?")) {
+                reservedDates.push({ date: selectedDate, artist: selectedArtist, ticket: selectedTicket });
+                calendar.addEvent({
+                    title: selectedArtist,
+                    start: selectedDate,
+                    backgroundColor: '#2c3e50',
+                    borderColor: 'black'
+                });
+            }
+        }
+        
+        ticketSelect.style.display = 'none';
+        ticketSelect.selectedIndex = 0;
+    });
+    
     calendar.render();
 });
