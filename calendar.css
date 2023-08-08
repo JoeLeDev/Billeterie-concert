@@ -1,0 +1,64 @@
+body {
+    background-color: beige;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+/* Style du conteneur du calendrier */
+#calendar {
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #333;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style des événements du calendrier */
+  .fc-event {
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  /* Style des liens vers les événements du calendrier */
+  .fc-event a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .fc-event a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Style des titres des événements du calendrier */
+  .fc-event-title {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  /* Style des dates des événements du calendrier */
+  .fc-event-time {
+    font-size: 12px;
+    color: #ccc;
+  }
+  
+  /* Style des boutons du calendrier */
+  .fc-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin: 5px;
+  }
+  
+  .fc-button:hover {
+    background-color: #555;
+  }
+  
