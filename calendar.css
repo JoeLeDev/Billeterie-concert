@@ -13,7 +13,7 @@ header {
 
 /* Styles du conteneur du calendrier */
 #calendar {
-    margin: 70px auto;
+    margin: 60px auto;
     padding: 10px;
     max-width: 800px;
     background-color: #333;
@@ -27,6 +27,7 @@ h3.titre {
  display: flex;
  justify-content: center;
  margin-top: 30px;
+ margin-left: 30px;
 }
 
 /* Style des événements du calendrier */
@@ -89,3 +90,51 @@ h3.titre {
 #artistSelect option:checked {
     background-color: #ddd;
 }
+
+/* Styles pour l'enveloppe du contenu principal */
+#main-content {
+    min-height: calc(100vh - 100px); /* La hauteur de la fenêtre moins la hauteur du header et du footer */
+    padding-bottom: 100px; /* Espace au bas du contenu pour éviter de chevaucher le footer */
+    box-sizing: border-box;
+}
+
+/* Styles pour le footer */
+#footer-container {
+    background-color: #333;
+    color: #fff;
+    position: relative; /* Assure que le footer est positionné relativement à son conteneur parent */
+    bottom: 0; /* Le footer sera placé en bas du conteneur */
+    width: 100%; /* Assure que le footer occupe toute la largeur de l'écran */
+}
+
+/* Styles pour les écrans de largeur inférieure à 600px */
+@media (max-width: 600px) {
+    #calendar {
+        margin: 20px auto;
+    }
+    h3.titre {
+        font-size: 18px;
+    }
+}
+
+/* Styles pour les écrans de largeur entre 600px et 800px */
+@media (min-width: 601px) and (max-width: 800px) {
+    #calendar {
+        margin: 40px auto;
+    }
+    h3.titre {
+        font-size: 22px;
+    }
+}
+
+
+/* Styles pour les écrans de très grande largeur (supérieure à 1200px) */
+@media (min-width: 1201px) {
+    #calendar {
+        margin: 100px auto;
+    }
+    h3.titre {
+        font-size: 24px;
+    }
+}
+

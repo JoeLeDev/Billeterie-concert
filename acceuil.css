@@ -101,3 +101,82 @@ footer {
     position: static;
     margin-top: 2rem;
 }
+
+/* Styles pour les écrans de très grande largeur (supérieure à 1200px) */
+@media (min-width: 1201px) {
+    .hero {
+        height: 800px;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    section.description {
+        font-size: 1.3rem;
+    }
+    .event {
+        max-width: 450px;
+        padding: 1.5rem;
+    }
+}
+
+/* Styles pour les tablettes */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .hero {
+        height: 600px;
+    }
+    h2 {
+        font-size: 2.3rem;
+    }
+    section.description {
+        font-size: 1.1rem;
+    }
+    .upcoming-events {
+        flex-direction: column;
+        align-items: center;
+    }
+    .event {
+        max-width: 350px;
+        padding: 1rem;
+    }
+}
+
+/* Styles pour les écrans de taille moyenne inférieure (601px à 768px) */
+@media (min-width: 601px) and (max-width: 768px) {
+    .hero {
+        height: 500px;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    section.description {
+        font-size: 1rem;
+        margin: 20px 10px;
+    }
+    .event {
+        max-width: 300px;
+        padding: 1rem;
+    }
+}
+
+/* Styles pour les petits écrans (jusqu'à 600px) */
+@media (max-width: 600px) {
+    .hero {
+        height: 400px;
+    }
+    h2.titre {
+        font-size: 1.6rem;
+        margin-top: 1rem;
+        margin-left: 1rem;
+
+    }
+    #event {
+        max-width: 250px;
+        padding: 0.8rem;
+    }
+    #descrpition {
+        padding: 10px;
+    }
+    .upcoming-events{
+        display: block;
+    }
+}
