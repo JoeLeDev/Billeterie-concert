@@ -140,9 +140,7 @@ button:hover {
 
 /* Styles pour les petits écrans (jusqu'à 600px) */
 @media (max-width: 600px) {
-    header {
-        padding: 0.3rem 0.6rem;
-    }
+
     h1 {
         font-size: 1.5rem;
     }

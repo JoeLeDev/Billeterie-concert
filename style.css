@@ -206,6 +206,86 @@ a:hover {
 	box-shadow: 0px 0px 10px rgb(0, 0, 0);
 }
 
+/* Styles pour les écrans de très grande largeur (supérieure à 1200px) */
+@media (min-width: 1201px) {
+    .event-row {
+        margin-top: 50px;
+    }
+}
+
+/* Styles pour les écrans de grande largeur (1025px à 1200px) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .event-row {
+        margin-top: 40px;
+    }
+    .section-accueil {
+        margin: 15px;
+    }
+}
+
+/* Styles pour les écrans de taille moyenne (769px à 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .event-row {
+        margin-top: 30px;
+    }
+    .section-accueil {
+        margin: 10px;
+    }
+}
+
+/* Styles pour les écrans de taille moyenne inférieure (601px à 768px) */
+@media (min-width: 601px) and (max-width: 768px) {
+    .event-row {
+        margin-top: 20px;
+    }
+    .section-accueil {
+        margin: 5px;
+    }
+    img {
+        width: 250px;
+        height: 250px;
+    }
+    .image-text {
+        font-size: 16px;
+    }
+}
+
+/* Styles pour les petits écrans (jusqu'à 600px) */
+@media (max-width: 600px) {
+    .event-section {
+        margin-top: 50px;
+    }
+    .event-row {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .section-accueil {
+        margin: 10px;
+    }
+    img {
+        display: block;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+    .image-text {
+        font-size: 14px;
+        text-align: center;
+    }
+    .event-name {
+        font-size: 16px;
+    }
+    .event-date,
+    .event-price {
+        font-size: 12px;
+    }
+    
+    #navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
 /* Mention.html */
 
 .textinfo {
@@ -293,4 +373,4 @@ html {
 
 .expand_more:active {
     color: #00507A;
-}
+}}
