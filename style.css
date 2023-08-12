@@ -284,6 +284,7 @@ a:hover {
         flex-direction: column;
         align-items: center;
     }
+}
 
 
 /* Mention.html */
@@ -362,7 +363,7 @@ html {
 	scroll-behavior: smooth;
   }
   
-  .expand_more,
+.expand_more,
 .expand_more:visited {
     color: #0077B6;
 }
@@ -373,4 +374,4 @@ html {
 
 .expand_more:active {
     color: #00507A;
-}}
+}
