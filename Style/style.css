@@ -1,27 +1,22 @@
 /* direction.css */
 
-main {
-	background-color: beige;
+body {
+    background-color: beige;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-
-body {
+* {
     font-family: 'Montserrat', sans-serif;
 	margin: 0;
 	padding: 0;
 }
 
-header {
-	background-color: #333;
-	color: #fff;
-	padding: 1em;
+main {
+    flex: 1;
 }
 
-h1 {
-	margin: 0;
-	font-size: 24px;
-	font-family: 'Roboto', serif;
-}
 
 nav ul {
 	list-style: none;
@@ -59,12 +54,14 @@ main {
 	padding: 1em;
 	border: 1px solid #ccc;
 	margin-bottom: 1em;
+    background-color: #333;
+    color: beige;
 }
 
 .offre button {
-	background-color: #333;
-	color: #fff;
-	border: none;
+	background-color: beige;
+	color: #333;
+	border: Zpx solid #000;
 	padding: 0.5em;
 }
 
@@ -85,7 +82,7 @@ main {
 }
 
 .payer {
-	background-color: #333;
+	background-color: beige;
 	color: #fff;
 	border: none;
 	padding: 0.5em;
@@ -112,6 +109,26 @@ img {
 	box-shadow: 0 2px 7px rgba(0, 0, 0, 30);
 
 }
+
+.offre {
+    flex: 2;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+   
+}
+
+#prix {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 500px;
+    margin-top: 70px;
+}
+
 
 /*  catalogue.css */
 
@@ -341,7 +358,7 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.5)), url(./Images/bgConcert.jpeg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.5)), url(../Images/bgConcert.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -375,3 +392,4 @@ html {
 .expand_more:active {
     color: #00507A;
 }
+

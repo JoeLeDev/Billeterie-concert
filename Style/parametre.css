@@ -183,6 +183,12 @@ button {
     background-color: #333;
 }
 
+.role {
+    display: flex;
+    gap: 7px;
+    margin: 20px 0px;
+}
+
 /* Styles pour les écrans de grande largeur (1025px à 1200px) */
 @media (min-width: 1025px) and (max-width: 1200px) {
 
