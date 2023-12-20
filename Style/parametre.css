@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    background-color: beige;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    margin-left: 0px;
+    background-color: black;
+    align-items: flex-start;
+    width: fit-content;
+    flex: 1;
+}
+
+.sidebar {
+    color: white;
+    max-width: fit-content;
+}
+
+.param {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 10px;
+    list-style: none;
+}
+
+.param li {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.infos_container {
+    row-gap: 50px;
+    color: #333;
+    width: 60%;
+    padding: 20px;
+    height: 100%;
+
+}
+
+.paramcontainer {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    flex: 1;
+}
+
+.contact-form {
+    width: 100%;
+    flex: 1;
+}
+
+.inputinfo {
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+
+.radioinfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    column-gap: 30px;
+}
+
+.blbl {
+    border: none;
+    background-color: inherit;
+    width: inherit;
+}
+
+button {
+    margin-top: 20px;
+}
+
+.titre {
+    margin-bottom: 20px;
+}
+
+.Submitbutton {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px 0px;
+}
+
+.mdp-form {
+    margin-top: 50px;
+}
+
+.notif_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    column-gap: 30px;
+    row-gap: 20px;
+    padding: 20px;
+
+}
+
+.notif_txt {
+    margin-bottom: 20px;
+}
+
+
+.paiement_container {
+    display: flex;
+    flex-direction: column;
+    column-gap: 30px;
+    row-gap: 20px;
+    padding: 20px;
+}
+
+.card_txt {
+    margin-bottom: 20px;
+}
+
+.paypal-txt {
+    margin-bottom: 10px;
+}
+
+.type_of_paiement {
+    margin-bottom: 10px
+}
+
+.booking_container {
+    display: flex;
+    flex-direction: column;
+    column-gap: 30px;
+    row-gap: 20px;
+    padding: 20px;
+}
+
+.booking_container li {
+    margin: 10px 0px;
+}
+
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin-right: 10px;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+}
+
+.role {
+    display: flex;
+    gap: 7px;
+    margin: 20px 0px;
+}
+
+/* Styles pour les écrans de grande largeur (1025px à 1200px) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+
+    .infos_container,
+    .notif_container,
+    .paiement_container,
+    .booking_container {
+        width: 80%;
+    }
+}
+
+/* Styles pour les écrans de taille moyenne (769px à 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .sidebar {
+        width: 30%;
+    }
+
+    .infos_container,
+    .notif_container,
+    .paiement_container,
+    .booking_container {
+        width: 70%;
+    }
+}
+
+/* Styles pour les écrans de taille moyenne inférieure (601px à 768px) */
+@media (min-width: 601px) and (max-width: 768px) {
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .infos_container,
+    .notif_container,
+    .paiement_container,
+    .booking_container {
+        width: 100%;
+    }
+}
+
+/* Styles pour les petits écrans (jusqu'à 600px) */
+@media (max-width: 600px) {
+    .paramcontainer {
+
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .sidebar {
+        font-size: 12px;
+        flex: 0;
+        padding: 30px 100px;
+    }
+
+    .infos_container,
+    .notif_container,
+    .paiement_container,
+    .booking_container {
+        width: 100%;
+        padding: 10px;
+    }
+}

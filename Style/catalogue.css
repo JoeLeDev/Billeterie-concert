@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', serif;
+}
+
+
+body{
+    background-color: beige;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 24px;
+    font-family: 'Roboto', serif;
+}
+
+div {
+    display: grid;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+}
+img:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+.section-accueil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 20px 20px;
+}
+
+.event-section {
+    margin-left: auto;
+    margin-top: 70px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+    transition: all 0.3s ease;
+}
+
+.event-row {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.image-text {
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.event-name {
+    font-size: 18px;
+    color: #000;
+}
+
+.event-date {
+    font-size: 14px;
+    color: #666;
+}
+
+.event-price {
+    font-size: 14px;
+    color: #666;
+}
+.event-price strong {
+    color: #000;
+}
+
+.section-accueil img:hover {
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+  
